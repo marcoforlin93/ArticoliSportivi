@@ -17,15 +17,20 @@ public class eliminare {
     }
     
     public int f1() {
-        return a++;
+        return ++a;
     }
     
     public boolean f2(int p1) {
         return p1==1;
     }
     
+    public boolean f3(int p1) {
+    return p1==0;
+    }
+    
     public static void main(String[] args) {
         eliminare e = new eliminare(0);
         System.out.println(e.f2(e.f1()));
+        System.out.println(e.f3(e.f1()));
     }
 }
