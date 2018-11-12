@@ -33,4 +33,6 @@ public class eliminare {
         System.out.println(e.f2(e.f1()));
         System.out.println(e.f3(e.f1()));
     }
+    
+    RFGRTGTRGRT
 }
