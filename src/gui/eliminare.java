@@ -17,7 +17,7 @@ public class eliminare {
     }
     
     public int f1() {
-        return ++a;
+        return --a;
     }
     
     public boolean f2(int p1) {
