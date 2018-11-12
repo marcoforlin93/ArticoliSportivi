@@ -15,6 +15,4 @@ public interface GUI {
     
     // Visualizza solo il pannello passato
     public void closeAllExcept(JPanel p);
-
-  //prova
 }
