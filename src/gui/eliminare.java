@@ -16,11 +16,16 @@ public class eliminare {
     this.a = a;
     }
     
-    public int f1(int p1) {
-        return ++p1;
+    public int f1() {
+        return a++;
     }
     
     public boolean f2(int p1) {
         return p1==1;
+    }
+    
+    public static void main(String[] args) {
+        eliminare e = new eliminare(0);
+        System.out.println(e.f2(e.f1()));
     }
 }
