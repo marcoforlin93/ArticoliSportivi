@@ -14,5 +14,10 @@ public interface GUI {
     public void refreshPanel(JPanel panel);
     
     // Visualizza solo il pannello passato
-    public void closeAllExcept(JPanel p);    
+    public void closeAllExcept(JPanel p);
+
+
+/**
+ * ELIMINARE IMMEDIATAMENTE
+ */    
 }
