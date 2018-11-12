@@ -32,5 +32,6 @@ public class eliminare {
         eliminare e = new eliminare(0);
         System.out.println(e.f2(e.f1()));
         System.out.println(e.f3(e.f1()));
-    }
+    }+
+    fdvfsvafvadvsdfbvfsvcaVF X
 }
