@@ -792,7 +792,7 @@ public class WarehouseWorkerFrame extends javax.swing.JFrame {
      */
     private void saveEntryArticle() {
         String categoryArticle;
-        String typeArticle;
+        String typeArticle = "CALCIO";
         int quantityAsInt = 0;
         int rowAsInt = 0;
         int shelfNumberAsInt = 0;
@@ -955,23 +955,27 @@ public class WarehouseWorkerFrame extends javax.swing.JFrame {
 
                 // n = 0 premuto pulsante SI
                 if (n == 0) {
-                    //entry.addEnteredArticle(new ArticleInWarehouse(articleType, ERROR, ProductionDate, positionInWarehouse, SOMEBITS));
+                    entry.addEnteredArticle(new ArticleInWarehouse(warehouse.getArticleType(Sport.valueOf(categoryArticle), typeArticle), priceAsInt, new ProductionDate(yearAsInt, monthAsInt, dayAsInt), new PositionInWarehouse(rowAsInt, shelfNumberAsInt, levelAsInt), quantityAsInt));
+                    entry.saveEntry();
+                    entry.deleteEntry();
                     JOptionPane.showMessageDialog(null, "Salvato!");
                     closeAllExcept(jPanelMenu);
                     refreshPanel(jPanelEntry);
                     WhiteLabels(jPanelEntry);
                     entry.saveEntry();
 
-                    // n = 1 premuto pulsante NO
+                // n = 1 premuto pulsante NO
                 } else if (n == 1) {
+                    entry.deleteEntry();
                     JOptionPane.showMessageDialog(null, "Operazione annullata");
                     closeAllExcept(jPanelMenu);
                     refreshPanel(jPanelEntry);
                     WhiteLabels(jPanelEntry);
                     entry = null;
 
-                    // n = 2 premuto pulsante aggiungi articoli
+                // n = 2 premuto pulsante aggiungi articoli
                 } else if (n == 2) {
+                    entry.addEnteredArticle(new ArticleInWarehouse(warehouse.getArticleType(Sport.valueOf(categoryArticle), typeArticle), priceAsInt, new ProductionDate(yearAsInt, monthAsInt, dayAsInt), new PositionInWarehouse(rowAsInt, shelfNumberAsInt, levelAsInt), quantityAsInt));
                     refreshPanel(jPanelEntry);
                     WhiteLabels(jPanelEntry);
                 }
