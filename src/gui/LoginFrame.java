@@ -139,58 +139,58 @@ public class LoginFrame extends javax.swing.JFrame {
     private javax.swing.JTextField jTextFieldUsername;
     // End of variables declaration//GEN-END:variables
 
-//    public static void main(String[] args) {
-//        Warehouse warehouse = new Warehouse();
+    public static void main(String[] args) {
+        Warehouse warehouse = new Warehouse();
+
+        // ----- CREAZIONE E STAMPA OGGETTI -----
+//        Address address = new Address("Via", "Pradelle", 8, "B", 37142);
+//        System.out.println(address + "\n");
+//        
+//        User administrativeSecretary = new AdministrativeSecretary("prova", "1224");
+//        System.out.println(administrativeSecretary + "\n");
+//        
+//        ArticleType articleType = new ArticleType("maglia", "sono una maglia", Sport.CALCIO, "cotone", "legno");
+//        System.out.println(articleType + "\n");
+//        
+//        MyDate date = new MyDate(2018, 1, 1);
+//        System.out.println(date + "\n");
+//        
+//        PositionInWarehouse positionInWarehouse = new PositionInWarehouse(15, 46, 3);
+//        System.out.println(positionInWarehouse + "\n");
+//        
+//        ProductionDate productionDate = new ProductionDate(1, 2, 14);
+//        System.out.println(productionDate + "\n");
+//        
+//        Shop shop = new Shop(1666, "negozio1", address, City.ASTI);
+//        System.out.println(shop + "\n");
+//        
+//        User shopAsUser = new ShopAsUser("negozio1", "1234", shop.getFiscalCode());
+//        System.out.println(shopAsUser + "\n");
+//        
+//        ArticleInWarehouse articleInWarehouse = new ArticleInWarehouse(articleType, 13.2, productionDate, positionInWarehouse, 15);
+//        System.out.println(articleInWarehouse + "\n");
 //
-//        // ----- CREAZIONE E STAMPA OGGETTI -----
-////        Address address = new Address("Via", "Pradelle", 8, "B", 37142);
-////        System.out.println(address + "\n");
-////        
-////        User administrativeSecretary = new AdministrativeSecretary("prova", "1224");
-////        System.out.println(administrativeSecretary + "\n");
-////        
-////        ArticleType articleType = new ArticleType("maglia", "sono una maglia", Sport.CALCIO, "cotone", "legno");
-////        System.out.println(articleType + "\n");
-////        
-////        MyDate date = new MyDate(2018, 1, 1);
-////        System.out.println(date + "\n");
-////        
-////        PositionInWarehouse positionInWarehouse = new PositionInWarehouse(15, 46, 3);
-////        System.out.println(positionInWarehouse + "\n");
-////        
-////        ProductionDate productionDate = new ProductionDate(1, 2, 14);
-////        System.out.println(productionDate + "\n");
-////        
-////        Shop shop = new Shop(1666, "negozio1", address, City.ASTI);
-////        System.out.println(shop + "\n");
-////        
-////        User shopAsUser = new ShopAsUser("negozio1", "1234", shop.getFiscalCode());
-////        System.out.println(shopAsUser + "\n");
-////        
-////        ArticleInWarehouse articleInWarehouse = new ArticleInWarehouse(articleType, 13.2, productionDate, positionInWarehouse, 15);
-////        System.out.println(articleInWarehouse + "\n");
-////
-////        User warehouseWorker = new WarehouseWorker("magazziniere", "1234");
-////        System.out.println(warehouseWorker + "\n");
-//        new LoginFrame(warehouse).setVisible(true);
-//        new SecretaryPanel(warehouse).setVisible(true);
-//        new ShopPanel(warehouse).setVisible(true);
-//        new WarehouseWorkerFrame(warehouse).setVisible(true);
-////        
-////            loginPanel.addWindowListener(new WindowAdapter() {
-////            @Override
-////            public void windowClosing(WindowEvent e)
-////            {
-////                System.out.println("prova");
-////                
-////        
-////        int i = 13;
-////        
-////        System.out.println(String.format("%10s", 13).replace(" ", "0"));
-////        loginPanel.setDefaultCloseOperation(EXIT_ON_CLOSE);
-////            }
-////        });
-////        
-//
-//    }
+//        User warehouseWorker = new WarehouseWorker("magazziniere", "1234");
+//        System.out.println(warehouseWorker + "\n");
+        new LoginFrame(warehouse).setVisible(true);
+        new SecretaryPanel(warehouse).setVisible(true);
+        new ShopPanel(warehouse).setVisible(true);
+        new WarehouseWorkerFrame(warehouse).setVisible(true);
+//        
+//            loginPanel.addWindowListener(new WindowAdapter() {
+//            @Override
+//            public void windowClosing(WindowEvent e)
+//            {
+//                System.out.println("prova");
+//                
+//        
+//        int i = 13;
+//        
+//        System.out.println(String.format("%10s", 13).replace(" ", "0"));
+//        loginPanel.setDefaultCloseOperation(EXIT_ON_CLOSE);
+//            }
+//        });
+//        
+
+    }
 }

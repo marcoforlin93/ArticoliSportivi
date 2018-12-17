@@ -883,12 +883,16 @@ public class WarehousePanel extends javax.swing.JFrame implements GUI {
         // Salvataggio dell'anno
         String year = jTextFieldYear.getText();
         System.out.println(" " + year);
-
+        
         // Controllo che giorno mese e anno siano dei numeri e controllo della veridicità della data
+        int nDay = 0;
+        int nMonth = 0;
+        int nYear = 0;
+        
         try {
-            int nDay = Integer.parseInt(day);
-            int nMonth = Integer.parseInt(month);
-            int nYear = Integer.parseInt(year);
+            nDay = Integer.parseInt(day);
+            nMonth = Integer.parseInt(month);
+            nYear = Integer.parseInt(year);
             new MyDate(nYear, nMonth, nDay);
             new ProductionDate(nYear, nMonth, nDay);
 
@@ -919,7 +923,10 @@ public class WarehousePanel extends javax.swing.JFrame implements GUI {
 
             // n = 0 premuto pulsante SI
             if (n == 0) {
-                //entry.addEnteredArticle(new ArticleInWarehouse(articleType, ERROR, ProductionDate, positionInWarehouse, SOMEBITS));
+               ArticleType a = warehouse.getArticleType(Sport.SCI, typeArticle);
+                entry.addEnteredArticle(new ArticleInWarehouse(ArticleType, price, productionDate, positionInWarehouse, quantity));
+         
+
                 JOptionPane.showMessageDialog(null, "Salvato!");
                 closeAllExcept(jPanelMenu);
                 refreshPanel(jPanelEntryArticle);

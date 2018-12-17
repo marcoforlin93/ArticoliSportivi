@@ -135,37 +135,35 @@ public class LoginPanel extends javax.swing.JFrame {
     private javax.swing.JButton loginButton;
     // End of variables declaration//GEN-END:variables
 
-//    public static void main(String[] args) {
-//        
-//        Warehouse warehouse = new Warehouse();
+    
 //        int i = 34;
-//        //ProductionDate n = new ProductionDate(4514354, 3, 5);
+//        ProductionDate n = new ProductionDate(4514354, 3, 5);
 //
-//        //System.out.println(new java.util.Date(System.currentTimeMillis()));
-////        JFrame loginPanel = new LoginPanel(warehouse);
+//        System.out.println(new java.util.Date(System.currentTimeMillis()));
+//        JFrame loginPanel = new LoginPanel(warehouse);
 //        new SecretaryPanel(warehouse).setVisible(true);
 //        new ShopPanel(warehouse).setVisible(true);
 //        
-//        new WarehousePanel(warehouse).setVisible(true);
-////        new SecretaryPanel().setVisible(true);
-////        new ShopPanel().setVisible(true);
-////        new SecretaryPanel().setVisible(true);
-////        
-////            loginPanel.addWindowListener(new WindowAdapter() {
-////            @Override
-////            public void windowClosing(WindowEvent e)
-////            {
-////                System.out.println("prova");
-////                
-////        
-////        int i = 13;
-////        
-////        System.out.println(String.format("%10s", 13).replace(" ", "0"));
-////        loginPanel.setDefaultCloseOperation(EXIT_ON_CLOSE);
-////            }
-////        });
-////        
+        new WarehousePanel(warehouse).setVisible(true);
+//        new SecretaryPanel(warehouse).setVisible(true);
+//        new ShopPanel(warehouse).setVisible(true);
+//        new SecretaryPanel(warehouse).setVisible(true);
+        
+//            loginPanel.addWindowListener(new WindowAdapter() {
+//            @Override
+//            public void windowClosing(WindowEvent e)
+//            {
+//                System.out.println("prova");
+//                
 //        
+//        int i = 13;
 //        
-//    }
+//        System.out.println(String.format("%10s", 13).replace(" ", "0"));
+//        loginPanel.setDefaultCloseOperation(EXIT_ON_CLOSE);
+//            }
+//        });
+        
+        
+        
+    }
 }

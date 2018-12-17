@@ -255,7 +255,7 @@ public class Warehouse {
         private final int code; // solo le ultime 10 cifre
 
         // contiene gli articoli presenti nell'ingresso:
-        private final Map<Sport, Map<Long, ArticleInWarehouse>> enteredArticles;
+        private Map<Sport, Map<Long, ArticleInWarehouse>> enteredArticles;
 
         /**
          * Costruttore della classe.
@@ -361,6 +361,10 @@ public class Warehouse {
             });
 
             entries.put(code, this);
+        }
+        
+        public void deleteEntry() {
+            enteredArticles = new HashMap<>();
         }
 
         /**
